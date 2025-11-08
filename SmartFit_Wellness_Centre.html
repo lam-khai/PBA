@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmoothFit Wellness Centre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery + jQuery Mobile CDN -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+        .center-text { text-align: center; margin-top: 20px; }
+        .service-card { padding: 10px; }
+    </style>
+</head>
+
+<body>
+
+<!-- PAGE 1: HOME -->
+<div data-role="page" id="home">
+    <div data-role="header" data-position="fixed">
+        <h1>SmoothFit Wellness</h1>
+    </div>
+
+    <div data-role="content" class="center-text">
+        <h2>Welcome</h2>
+        <p>Your health and relaxation matters.</p>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" class="ui-btn-active" data-transition="fade">Home</a></li>
+                <li><a href="#services" data-transition="slide">Services</a></li>
+                <li><a href="#contact" data-transition="slide">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- PAGE 2: SERVICES -->
+<div data-role="page" id="services">
+    <div data-role="header" data-position="fixed">
+        <h1>Our Services</h1>
+    </div>
+
+    <div data-role="content">
+        <ul data-role="listview" data-inset="true">
+
+            <li class="service-card">
+                <h2>Full Body Massage</h2>
+                <p>RM 60 / hour</p>
+            </li>
+
+            <li class="service-card">
+                <h2>Aromatherapy Relaxation</h2>
+                <p>RM 75 / session</p>
+            </li>
+
+            <li class="service-card">
+                <h2>Foot Reflexology</h2>
+                <p>RM 40 / 45 minutes</p>
+            </li>
+
+        </ul>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-transition="slide">Home</a></li>
+                <li><a href="#services" class="ui-btn-active" data-transition="fade">Services</a></li>
+                <li><a href="#contact" data-transition="slide">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- PAGE 3: CONTACT -->
+<div data-role="page" id="contact">
+    <div data-role="header" data-position="fixed">
+        <h1>Contact Us</h1>
+    </div>
+
+    <div data-role="content" class="center-text">
+        <p>Reach us easily:</p>
+
+        <a href="tel:+60123456789" data-role="button" data-icon="phone">Call Now</a>
+        <a href="mailto:info@smoothfit.com" data-role="button" data-icon="mail">Send Email</a>
+
+        <a href="https://maps.app.goo.gl/x9WhdSiu2tAixB3s5" 
+           data-role="button" data-icon="location">View Map</a>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-transition="slide">Home</a></li>
+                <li><a href="#services" data-transition="slide">Services</a></li>
+                <li><a href="#contact" class="ui-btn-active" data-transition="fade">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
